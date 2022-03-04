@@ -1,12 +1,11 @@
 name: Lint project
 'on':
   pull_request:
-    types: [opened, reopened]
     branches:
       - production
 jobs:
   build:
-    name: Build project
+    name: Lint project
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -20,5 +19,5 @@ jobs:
           node-version: ${{ matrix.node-version }}
       - name: Install
         run: npm ci
-      - name: Build
+      - name: Lint
         run: npm run lint
