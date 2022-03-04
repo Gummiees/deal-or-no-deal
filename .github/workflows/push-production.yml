@@ -26,4 +26,4 @@ jobs:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_DEAL_OR_NO_DEAL_GUMMIEES }}'
           channelId: live
-          projectId: time-sheet-9b403
+          projectId: deal-or-no-deal-gummiees
