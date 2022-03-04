@@ -1,0 +1,89 @@
+{
+  "name": "deal-or-no-deal",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Gummiees/deal-or-no-deal",
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "test": "ng test",
+    "lint:es": "ng lint --fix",
+    "lint:styles": "stylelint \"src/**/*.scss\"",
+    "lint": "npm run lint:es && npm run lint:styles",
+    "build": "ng build",
+    "buildpro": "ng build --configuration production",
+    "commit": "npm run lint && git add . && git commit -m \"auto-commit\"",
+    "push": "npm run commit && git push",
+    "deploy": "firebase deploy"
+  },
+  "dependencies": {
+    "@angular/animations": "~13.2.5",
+    "@angular/common": "~13.2.5",
+    "@angular/compiler": "~13.2.5",
+    "@angular/core": "~13.2.5",
+    "@angular/forms": "~13.2.5",
+    "@angular/platform-browser": "~13.2.5",
+    "@angular/platform-browser-dynamic": "~13.2.5",
+    "@angular/router": "~13.2.5",
+    "firebase": "^9.6.7",
+    "rxjs": "^7.5.4",
+    "tslib": "^2.3.0",
+    "zone.js": "~0.11.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~13.2.5",
+    "@angular-eslint/builder": "^13.1.0",
+    "@angular-eslint/eslint-plugin": "^13.1.0",
+    "@angular-eslint/eslint-plugin-template": "^13.1.0",
+    "@angular-eslint/schematics": "^13.1.0",
+    "@angular-eslint/template-parser": "^13.1.0",
+    "@angular/cli": "~13.2.5",
+    "@angular/compiler-cli": "~13.2.5",
+    "@types/jasmine": "~3.8.0",
+    "@types/node": "^16.11.26",
+    "@typescript-eslint/eslint-plugin": "4.28.2",
+    "@typescript-eslint/parser": "4.28.2",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jasmine-core": "~3.8.0",
+    "karma": "~6.3.0",
+    "karma-chrome-launcher": "~3.1.0",
+    "karma-coverage": "~2.0.3",
+    "karma-jasmine": "~4.0.0",
+    "karma-jasmine-html-reporter": "~1.7.0",
+    "postcss": "^8.4.7",
+    "prettier": "^2.5.1",
+    "stylelint": "^14.5.3",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-scss": "^4.1.0",
+    "tailwindcss": "^3.0.23",
+    "typescript": "~4.5.5"
+  },
+  "author": {
+    "name": "Gummiees",
+    "email": "xavicaromiro@gmail.com",
+    "url": "https://github.com/Gummiees"
+  },
+  "displayName": "Deal Or No Deal",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://www.opensource.org/licenses/mit-license.php"
+    },
+    {
+      "type": "Apache-2.0",
+      "url": "https://opensource.org/licenses/apache2.0.php"
+    }
+  ],
+  "repository": "github:Gummiees/deal-or-no-deal",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Gummiees/deal-or-no-deal/issues",
+    "email": "xavicaromiro@gmail.com"
+  },
+  "private": true
+}
