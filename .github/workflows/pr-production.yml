@@ -5,7 +5,7 @@ name: Lint project
       - production
 jobs:
   build:
-    name: Build project
+    name: Lint project
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -18,6 +18,6 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install
-        run: npm i
-      - name: Build
+        run: npm ci
+      - name: Lint
         run: npm run lint
