@@ -1,7 +1,6 @@
 name: Lint project
 'on':
   pull_request:
-    types: [opened, reopened]
     branches:
       - production
 jobs:
